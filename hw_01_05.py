@@ -20,7 +20,7 @@ while True:
         while True:
             try:
                 c = int(input('Введите количество сотрудников: '))
-                if c < 0:
+                if c <= 0:
                     raise ValueError
             except ValueError:
                 print('Вы ввели некорретные данные')
