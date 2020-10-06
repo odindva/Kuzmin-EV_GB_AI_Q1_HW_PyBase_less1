@@ -12,10 +12,10 @@ while True:
         print('Вы ввели не число')
     else:
         if a < b:
-            print(f'Вы работаете в убыток ({a-b})')
+            print(f'Вы работаете в убыток ({a - b})')
         else:
             print('Вы в плюсе')
-            print(f'Рентабельность составляет: {a/b:.2f}')
+            print(f'Рентабельность составляет: {a / b:.2f}')
 
         while True:
             try:
@@ -25,7 +25,6 @@ while True:
             except ValueError:
                 print('Вы ввели некорретные данные')
             else:
-                print(f'Прибыль фирмы на человека: {a/c:.2f}')
+                print(f'Прибыль фирмы на человека: {a / c:.2f}')
                 break
-
         break
