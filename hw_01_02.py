@@ -2,20 +2,11 @@
 # Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс.
 # Используйте форматирование строк.
 
-def form(i):
-    if i == 0:
-        return '00'
-    elif i < 10:
-        return '0' + str(i)
-    else:
-        return i
 
+seconds = int(input('Введите время в секундах: '))
 
-user_second = int(input('Введите время в секундах: '))
-ss = user_second % 60
-hh = user_second // 3600
-user_second -= hh * 3600
-mm = user_second // 60
-ss = user_second % 60
+h = seconds // 3600
+m = (seconds - h * 3600) // 60
+s = seconds - h * 3600 - m * 60
 
-print(f'{form(hh)}:{form(mm)}:{form(ss)}')
+print(f'{h:02}:{m:02}:{s:02}')

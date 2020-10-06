@@ -13,10 +13,10 @@ while True:
         print('Вы ввели некорректные данные')
     else:
         day = 1
-        # print(f'{day}-й день: {round(a, 2)}')  # для отладки
+        # print(f'{day}-й день: {a:.2f}')  # для отладки
         while a < b:
             a *= 1.1
             day += 1
-            # print(f'{day}-й день: {round(a,2)}')    # для отладки
+            # print(f'{day}-й день: {a:.2f}')  # для отладки
         print(f'Достижение целевого результата на {day}-й день')
         break

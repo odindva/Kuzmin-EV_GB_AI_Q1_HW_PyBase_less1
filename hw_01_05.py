@@ -15,7 +15,7 @@ while True:
             print(f'Вы работаете в убыток ({a-b})')
         else:
             print('Вы в плюсе')
-            print('Рентабельность составляет:', round(a/b, 2))
+            print(f'Рентабельность составляет: {a/b:.2f}')
 
         while True:
             try:
@@ -25,7 +25,7 @@ while True:
             except ValueError:
                 print('Вы ввели некорретные данные')
             else:
-                print('Прибыль фирмы на человека:', round(a/c, 2))
+                print(f'Прибыль фирмы на человека: {a/c:.2f}')
                 break
 
         break
